@@ -91,7 +91,7 @@
     "react-collapse": "^2.3.3",
     "react-css-themr": "^1.2.0",
     "react-datetime": "^2.5.0",
-    "react-dom": "^15.4.0",
+    "react-dom": "^16.0.1",
     "react-dropzone": "^3.3.2",
     "react-height": "^2.0.4",
     "react-image-crop": "^1.0.0-rc2",
