@@ -15,7 +15,9 @@
     "ava": "PWD=$(pwd) NODE_ENV=test ava -c 6",
     "precoverage:generate": "rimraf ./coverage",
     "coverage:generate": "nyc report --reporter=html --reporter=text-lcov > lcov.info",
-    "coverage:publish": "codeclimate-test-reporter < lcov.info"
+    "coverage:publish": "codeclimate-test-reporter < lcov.info",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "ava": {
     "files": [
@@ -48,7 +50,9 @@
     "ramda": "^0.22.1",
     "redux": "^3.4.0",
     "redux-actions": "^0.12.0",
-    "reselect": "^2.4.0"
+    "reselect": "^2.4.0",
+    "snyk": "^1.189.0"
   },
-  "license": "GNU GPLv3"
+  "license": "GNU GPLv3",
+  "snyk": true
 }
