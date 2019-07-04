@@ -5,7 +5,7 @@
   "main": "src/manifest.js",
   "private": true,
   "scripts": {
-    "prepublish": "exit 0",
+    "prepublish": "npm run snyk-protect; exit 0",
     "prebuild": "check-dependencies && npm run clean",
     "test": "npm run lint && nyc --lines 95 --functions 95 --branches 95 npm run ava",
     "test:watch": "npm run ava -- --watch",
@@ -17,7 +17,8 @@
     "precoverage:generate": "rimraf ./coverage",
     "coverage:generate": "nyc report --reporter=html --reporter=text-lcov > lcov.info",
     "coverage:publish": "codeclimate-test-reporter < lcov.info",
-    "postpublish": "greenkeeper-postpublish"
+    "postpublish": "greenkeeper-postpublish",
+    "snyk-protect": "snyk protect"
   },
   "ava": {
     "files": [
@@ -98,7 +99,9 @@
     "reselect": "^2.4.0",
     "style-loader": "^0.13.1",
     "uuid": "^2.0.2",
-    "whatwg-fetch": "^1.0.0"
+    "whatwg-fetch": "^1.0.0",
+    "snyk": "^1.189.0"
   },
-  "license": "GNU GPLv3"
+  "license": "GNU GPLv3",
+  "snyk": true
 }
