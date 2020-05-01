@@ -20,7 +20,9 @@
     "stylelint": "./node_modules/.bin/stylelint"
   },
   "scripts": {
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "ava": "^0.16.0",
@@ -35,7 +37,9 @@
     "nyc": "^8.3.1",
     "rimraf": "^2.5.4",
     "watch": "^0.19.2",
-    "webpack": "^1.13.2"
+    "webpack": "^1.13.2",
+    "snyk": "^1.316.1"
   },
-  "license": "GNU GPLv3"
+  "license": "GNU GPLv3",
+  "snyk": true
 }
