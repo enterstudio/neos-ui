@@ -65,7 +65,7 @@
     "@neos-project/utils-redux": "^4.4.8",
     "classnames": "^2.2.3",
     "core-js": "^2.4.1",
-    "debug": "^2.2.0",
+    "debug": "^3.1.0",
     "immutable": "^3.8.0",
     "lodash.assign": "^4.2.0",
     "lodash.compose": "^2.4.1",
