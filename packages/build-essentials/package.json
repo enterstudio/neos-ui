@@ -35,7 +35,7 @@
     "nyc": "^8.3.1",
     "rimraf": "^2.5.4",
     "watch": "^0.19.2",
-    "webpack": "^1.13.2"
+    "webpack": "^2.2.0"
   },
   "license": "GNU GPLv3"
 }
